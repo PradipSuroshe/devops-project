@@ -8,9 +8,9 @@ pipeline {
 	stages {
 		stage ("stage-1") {
 			steps {	
-				sh "rm -rf *"
-				sh "mkdir hello"
+				sleep 10
 				sh "yum install tree -y"
+				sh "yum install git -y"
 
 			}
 		}
