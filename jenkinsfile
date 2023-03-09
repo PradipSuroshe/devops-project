@@ -1,0 +1,18 @@
+pipeline {
+	agent {	
+		label {	
+			label "built-in"
+		
+		}
+	}
+	stages {
+		stage ("stage-1") {
+			steps {	
+				sh "rm -rf *"
+				sh "mkdir hello"
+				sh "yum install tree -y"
+
+			}
+		}
+	}
+}		
